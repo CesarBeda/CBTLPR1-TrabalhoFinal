@@ -1,0 +1,79 @@
+Cesar Beda Candido da Silva CB302704X
+
+Exercício 01
+Reescreva as propriedades e métodos da classe Data, deixando-os de acordo com
+o padrão UML (Getter e Setter).
+
+public class Data {
+    private int dia;
+    private int mes;
+    private int ano;
+
+    // Construtor
+    public Data(int dia, int mes, int ano) {
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+
+    // Getters e Setters
+    public int getDia() {
+        return dia;
+    }
+
+    public void setDia(int dia) {
+        this.dia = dia;
+    }
+
+    public int getMes() {
+        return mes;
+    }
+
+    public void setMes(int mes) {
+        this.mes = mes;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%02d/%02d/%04d", dia, mes, ano);
+    }
+}
+
+Exercício 02
+ConsultaAgendada.java
+
+Exercício 3
+TesteConsultaAgendada.java
+
+
+Exercício 04
+Escreva todo o resultado obtido no exercício 3 em um arquivo texto.
+
+Propriedades de p1:
+Data: 22/09/2024
+Hora: 12:45:11
+Nome do Paciente: Augusto Carlos
+Nome do Medico: Doctor Rey
+
+Propriedades de p2:
+Data: 12/07/2025
+Hora: 08:29:22
+Nome do Paciente: Carla Miranda
+Nome do Medico: Susana Vieira
+
+
+Propriedades de p1 apos alterações:
+Data: 12/04/2026
+Hora: 15:10:59
+Nome do Paciente: Augusto Roberto
+Nome do Medico: Doctor Who
+
+Quantidade final de consultas agendadas: 2
